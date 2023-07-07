@@ -47,6 +47,10 @@
                     <div class="card mt-1">
                         <div class="card-header"><h5>Lesson {{lesson.order|add:1}}: {{lesson.title}}</h5></div>
                         <div class="card-body">{{lesson.content}}</div>
+                        <div id="exam" data-toggle="collapse" data-target="#exam_details">
+                            Click to expand elements within the collapse div
+                        </div>
+                        <div id="exam_details" class="collapse">Hier steht ein Kurs</div>
                     </div>
                 {% endfor %}
             </div>
